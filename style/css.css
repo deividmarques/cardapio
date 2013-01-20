@@ -3,15 +3,46 @@
 	padding: 0;
 }
 .box{
-	margin: 30px auto 0;
+	margin: 0 0 0 -450px;
 	height: 440px;
+	left: 50%;
 	padding: 20px;
+	position: absolute;
+	top: 30px;
 	width: 860px;
-	-webkit-animation: loop 60s linear infinite;
+	/*-webkit-animation: loop 60s linear infinite;
 	animation: loop 60s linear infinite;
-	-moz-animation: loop 60s linear infinite;
+	-moz-animation: loop 60s linear infinite;*/
+    
+	
+}
 
+
+.box-01{
 	background: url('../images/imagem01.jpg') no-repeat 0 0;
+	-webkit-animation: banner1 30s linear infinite;
+	animation: banner1 30s linear infinite;
+	-moz-animation: banner1 30s linear infinite;	
+	
+}
+@-webkit-keyframes banner1 {
+    0% {opacity: 0 }
+    2% {opacity: 1 }
+    10% {opacity: 1 }
+    28% {opacity: 1 }
+    30% {opacity: 0 }
+    40% {opacity: 0 }
+    50% {opacity: 0 }
+    60% {opacity: 0 }
+    70% {opacity: 0 }
+    80% {opacity: 0 }
+    90% {opacity: 0 }
+    100% {opacity: 0 }
+}
+
+
+.box-01:hover{
+	-webkit-animation-play-state: paused;
 }
 @-webkit-keyframes loop {
     0% { background-position: 0 0; }
@@ -40,9 +71,9 @@
 	padding: 0 20px;
 	position: absolute;
 	width: 220px;
-	-webkit-animation: showBg 0.8s linear;
-	animation: showBg 0.8s linear infinite;
-	-moz-animation: showBg 0.8s linear infinite;
+	-webkit-animation: showBg 0.8s linear 1;
+	animation: showBg 0.8s linear 1;
+	-moz-animation: showBg 0.8s linear 1;
 	
 }
 @-webkit-keyframes showBg {
@@ -73,4 +104,98 @@
     	width: 220px;
 	}
 
+}
+.main{
+	background: rgba(0,0,0,0.4);
+	color: rgb(256,256,256);
+	height: 300px;
+	left: 20px;
+    top: 110px;
+	padding: 20px;
+	position: absolute;
+	width: 820px;
+	-webkit-animation: showMain 0.8s linear 1;
+	animation: showMain 0.8s linear 1;
+	-moz-animation: showMain 0.8s linear 1;
+}
+@-webkit-keyframes showMain {
+    0% { 
+    	color: rgba(0,0,0,0);
+    	height: 0;
+    	left: 410px;
+    	top: 260px;
+    	opacity: 0;
+    	width: 0;
+    }
+    45% { 
+    	color: rgba(0,0,0,0);
+    	height: 0;
+    	left: 410px;
+    	top: 260px;
+    	opacity: 0;
+    	width: 0;
+    }
+	90%{ 
+		color: rgb(256,256,256);
+		height: 306px;
+    	margin: 0;
+    	left: 15px;
+    	top: 105px;
+    	opacity: 1;
+    	width: 826px;
+	}
+	100%{ 
+		color: rgb(256,256,256);
+		height: 300px;
+    	margin: 0;
+    	left: 20px;
+    	top: 110px;
+    	opacity: 1;
+    	width: 820px;
+	}
+
+}
+.box-02 {
+	background: red;
+	-webkit-animation: banner2 30s linear infinite;
+	animation: banner2 30s linear infinite;
+	-moz-animation: banner2 30s linear infinite;	
+}
+@-webkit-keyframes banner2 {
+    0% {opacity: 0 }
+    10% {opacity: 0 }
+    28% {opacity: 0 }
+    30% {opacity: 0 }
+    32% {opacity: 1 }
+    40% {opacity: 1 }
+    50% {opacity: 1 }
+    60% {opacity: 1 }
+    70% {opacity: 0 }
+    80% {opacity: 0 }
+    90% {opacity: 0 }
+    100% {opacity: 0 }
+}
+
+
+.box-03 {
+	background: yellow;
+	-webkit-animation: banner3 30s linear infinite;
+	animation: banner3 30s linear infinite;
+	-moz-animation: banner3 30s linear infinite;	
+}
+@-webkit-keyframes banner3 {
+    0% {opacity: 0 }
+    10% {opacity: 0 }
+    28% {opacity: 0 }
+    30% {opacity: 0 }
+    32% {opacity: 0 }
+    40% {opacity: 0 }
+    50% {opacity: 0 }
+    60% {opacity: 0 }
+    61% {opacity: 1 }
+    70% {opacity: 1 }
+    80% {opacity: 1 }
+    90% {opacity: 1 }
+    99% {opacity: 1 }
+    100% {opacity: 0 }
 }
